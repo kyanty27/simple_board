@@ -1,0 +1,8 @@
+<div class="my-3">
+    <% flash.each do |key, value| %>
+    <div class="alert <%= bs4_bgcolor_for(key) %> alert-dismissable fade show">
+        <%= value %>
+        <buttom class="close" deta-dismiss="alert">x</buttom>
+    </div>
+<% end %>
+</div>
